@@ -1,0 +1,11 @@
+[ {
+  "uid" : "761a2f9a4be6e52",
+  "name" : "test_regisztracio",
+  "time" : {
+    "start" : 1627243954991,
+    "stop" : 1627243957804,
+    "duration" : 2813
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

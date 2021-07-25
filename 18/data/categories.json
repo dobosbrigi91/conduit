@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".btn\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_regisztracio",
+        "uid" : "761a2f9a4be6e52",
+        "parentUid" : "e05d1e3a398666a30dc6f26ef90555f3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627243954991,
+          "stop" : 1627243957804,
+          "duration" : 2813
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e05d1e3a398666a30dc6f26ef90555f3"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
