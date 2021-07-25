@@ -24,12 +24,6 @@ jobs:
     - name: Install Chrome
       run: |
         sudo apt install google-chrome-stable
-    - name: Install Chrome driver
-      run: | 
-        sudo apt-get -yqq install chromium-chromedriver
-    - name: Sleep for 120 seconds
-      run: sleep 120s
-      shell: bash
       
     - name: Start containers
       run: docker-compose up -d
