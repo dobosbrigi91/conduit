@@ -24,15 +24,9 @@ jobs:
     - name: Install Chrome
       run: |
         sudo apt install google-chrome-stable
-    - name: Download Chromedriver
+    - name: Download Sel
       run: | 
-        sudo wget https://chromedriver.storage.googleapis.com/91.0.4472.101/chromedriver_linux64.zip
-    - name: unzip Chromedriver
-      run: | 
-        sudo unzip chromedriver_linux64.zip 
-    - name: move Chromedriver
-      run: | 
-        sudo mv chromedriver /usr/bin/chromedriver     
+        sudo pip install -U selenium
       
     - name: Start containers
       run: docker-compose up -d
