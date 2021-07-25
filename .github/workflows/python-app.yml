@@ -30,7 +30,7 @@ jobs:
       shell: bash
     - name: Test with pytest
       run: |
-        pytest --alluredir=allure-results
+        pytest test --alluredir=allure-results
     - name: Get Allure history
       uses: actions/checkout@v2
       if: always()
