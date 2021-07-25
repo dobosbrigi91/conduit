@@ -12,9 +12,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
-    - uses: nanasess/setup-chromedriver@master
-
     - name: Set up Python 3.9
       uses: actions/setup-node@v2
       with:
@@ -27,6 +24,9 @@ jobs:
     - name: Install Chrome
       run: |
         sudo apt install google-chrome-stable
+    - name: Install Chrome driver
+      run: | 
+        sudo apt-get -yqq install chromium-chromedriver
     - name: Start containers
       run: docker-compose up -d
 
