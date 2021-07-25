@@ -24,13 +24,15 @@ jobs:
     - name: Install Chrome
       run: |
         sudo apt install google-chrome-stable
-    - name: Install Chrome driver
+    - name: Download Chromedriver
       run: | 
         sudo wget https://chromedriver.storage.googleapis.com/91.0.4472.101/chromedriver_linux64.zip
-        sudo unzip chromedriver_linux64.zip
-        sudo mv chromedriver /usr/bin/chromedriver
-        sudo chown root:root /usr/bin/chromedriver
-        sudo chmod +x /usr/bin/chromedriver
+    - name: unzip Chromedriver
+      run: | 
+        sudo unzip chromedriver_linux64.zip 
+    - name: move Chromedriver
+      run: | 
+        sudo mv chromedriver /usr/bin/chromedriver     
       
     - name: Start containers
       run: docker-compose up -d
