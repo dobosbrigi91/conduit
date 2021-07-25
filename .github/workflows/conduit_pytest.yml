@@ -24,6 +24,13 @@ jobs:
     - name: Install Chrome
       run: |
         sudo apt install google-chrome-stable
+    - name: Install Chrome driver
+      run: | 
+        sudo wget https://chromedriver.storage.googleapis.com/91.0.4472.101/chromedriver_linux64.zip
+        sudo unzip chromedriver_linux64.zip
+        sudo mv chromedriver /usr/bin/chromedriver
+        sudo chown root:root /usr/bin/chromedriver
+        sudo chmod +x /usr/bin/chromedriver
       
     - name: Start containers
       run: docker-compose up -d
@@ -45,7 +52,7 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest ./tests/tests/test_registration.py  --alluredir=allure-results
+        pytest ./tests  --alluredir=allure-results
     - name: Get Allure history
       uses: actions/checkout@v2
       if: always()
