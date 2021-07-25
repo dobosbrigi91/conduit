@@ -1,4 +1,9 @@
 [ {
+  "buildOrder" : 7,
+  "reportUrl" : "https://dobosbrigi91.github.io/conduit/7/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
   "buildOrder" : 6,
   "reportUrl" : "https://dobosbrigi91.github.io/conduit/6/",
   "reportName" : "Allure Report with history",
