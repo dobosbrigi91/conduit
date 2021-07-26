@@ -17,7 +17,7 @@ def test_new_article():
         wait = WebDriverWait(driver, 10)
 
         # test user: email: testuser3@example.com password: Abcd123$
-        driver.find_element_by_xpath('//fieldset//input[@placeholder="Email"]').send_keys('testuser@example.com')
+        driver.find_element_by_xpath('//fieldset//input[@placeholder="Email"]').send_keys('testuser3@example.com')
         driver.find_element_by_xpath('//fieldset//input[@placeholder="Password"]').send_keys('Abcd123$')
         driver.find_element_by_xpath('//form/button').click()
         time.sleep(2)
