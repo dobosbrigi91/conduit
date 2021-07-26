@@ -42,10 +42,12 @@ def test_registration():
                 find_and_clear('//*[@id="app"]/div/div/div/div/form/fieldset[2]/input').send_keys(row[1])
                 find_and_clear('//*[@id="app"]/div/div/div/div/form/fieldset[3]/input').send_keys(row[2])
                 sign_up_button.click()
+    # Failed registration:
                 registration_failed_message_is_visible = wait.until(
                     EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div[3]")))
                 registration_failed_message = driver.find_element_by_xpath('/html/body/div[2]/div/div[3]').text
                 ok_button = driver.find_element_by_xpath('/html/body/div[2]/div/div[4]/div/button')
+
                 if registration_failed_message == 'Email must be a valid email.':
                     ok_button.click()
                 elif registration_failed_message == 'Email already taken.':
