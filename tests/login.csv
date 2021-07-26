@@ -1,0 +1,11 @@
+email,password,username
+,,kati
+testuser0@example.com,,pisti
+,Abcd123$,feri
+testuser1@example.com,Abcd123,geza
+testuser@example.com,Abcd123$,sanyi
+testuser1@example.com,Abcd123$,testuser1
+testuser2@example.com,Abcd123$,testuser2
+testuser3@example.com,Abcd123$,testuser3
+testuser4@example.com,Abcd123$,testuser4
+testuser5@example.com,Abcd123$,testuser5
