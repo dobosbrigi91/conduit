@@ -6,19 +6,24 @@ import csv
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.chrome.options import Options
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+options = Options()
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
+
+driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
 wait = WebDriverWait(driver, 10)
+
+
 def test_login():
     try:
         driver.get('http://localhost:1667/#/login')
-
 
         def find_and_clear(element_xpath):
             element = driver.find_element_by_xpath(element_xpath)
             element.clear()
             return element
-
 
         sign_in_button = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/button')
 
