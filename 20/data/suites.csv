@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Mon Jul 26 14:38:12 GMT 2021","Mon Jul 26 14:38:14 GMT 2021","2578","tests","test_registration","","","","test_registration",""
