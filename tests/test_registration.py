@@ -1,5 +1,8 @@
-import time
+# TC01 - Registration
 
+# imports:
+
+import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import csv
@@ -17,11 +20,12 @@ def find_and_clear(xpath):
     return element
 
 
-def test_regisztracio():
+def test_registration():
     driver.get('http://localhost:1667/#/register')
     time.sleep(2)
 
     try:
+
         sign_up_button = driver.find_element_by_class_name('btn')
 
         with open('registration.csv', 'r') as reg:
