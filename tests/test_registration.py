@@ -60,3 +60,4 @@ def test_registration():
                     ok_button.click()
     finally:
         driver.close()
+
