@@ -13,8 +13,11 @@ from selenium.webdriver.chrome.options import Options
 options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
+options.add_argument('--disable-extensions')
+
 
 driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+
 
 def test_new_article():
     try:
