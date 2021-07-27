@@ -1,0 +1,107 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//fieldset//input[@placeholder=\"Email\"]\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_articles_list",
+        "uid" : "b973891b1b9af2c0",
+        "parentUid" : "aa22c05163688d8b65445b2d6d893b68",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627376978607,
+          "stop" : 1627376987913,
+          "duration" : 9306
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aa22c05163688d8b65445b2d6d893b68"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"cookie-policy-panel\"]//a\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_cookie_policy_accept",
+        "uid" : "bdd9758089c02887",
+        "parentUid" : "df3238348d228dbd78fc5019f1536050",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627376988094,
+          "stop" : 1627376989851,
+          "duration" : 1757
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cookie_policy_decline",
+        "uid" : "6882e63589fb20ad",
+        "parentUid" : "df3238348d228dbd78fc5019f1536050",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627376989934,
+          "stop" : 1627376991624,
+          "duration" : 1690
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "df3238348d228dbd78fc5019f1536050"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div/div/form/button\"}\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "f7d89d70ee4781a4",
+        "parentUid" : "8437bb02b89f77f89e2623630114cdf1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627376991678,
+          "stop" : 1627376993417,
+          "duration" : 1739
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8437bb02b89f77f89e2623630114cdf1"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/conduit/conduit//newarticle.txt'",
+      "children" : [ {
+        "name" : "test_new_article",
+        "uid" : "9aea6a67e18bd41c",
+        "parentUid" : "ea1153147c60b5ac8e9d51860d527329",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627376993457,
+          "stop" : 1627376997979,
+          "duration" : 4522
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ea1153147c60b5ac8e9d51860d527329"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/conduit/conduit//registration.csv'",
+      "children" : [ {
+        "name" : "test_registration",
+        "uid" : "3c9b74ed66172fc2",
+        "parentUid" : "9afa208dea016407bc19b79de145919b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627376997985,
+          "stop" : 1627377000661,
+          "duration" : 2676
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9afa208dea016407bc19b79de145919b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
