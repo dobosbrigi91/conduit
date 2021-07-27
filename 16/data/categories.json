@@ -1,0 +1,60 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/conduit/conduit//login.csv'",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "d2824db71cf27a91",
+        "parentUid" : "4acf4057b45b1461865ec441e63a780c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627407938313,
+          "stop" : 1627407940056,
+          "duration" : 1743
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4acf4057b45b1461865ec441e63a780c"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/conduit/conduit//newarticle.txt'",
+      "children" : [ {
+        "name" : "test_new_article",
+        "uid" : "4911a0eb5a77dd60",
+        "parentUid" : "ea1153147c60b5ac8e9d51860d527329",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627407940108,
+          "stop" : 1627407944599,
+          "duration" : 4491
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ea1153147c60b5ac8e9d51860d527329"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/conduit/conduit//registration.csv'",
+      "children" : [ {
+        "name" : "test_registration",
+        "uid" : "bc640ffa2e986db4",
+        "parentUid" : "9afa208dea016407bc19b79de145919b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627407944607,
+          "stop" : 1627407948324,
+          "duration" : 3717
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9afa208dea016407bc19b79de145919b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

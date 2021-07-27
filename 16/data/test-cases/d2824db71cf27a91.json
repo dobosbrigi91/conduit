@@ -1,0 +1,83 @@
+{
+  "uid" : "d2824db71cf27a91",
+  "name" : "test_login",
+  "fullName" : "tests.test_login#test_login",
+  "historyId" : "144503cdd62308bf9f77a1ff306826fa",
+  "time" : {
+    "start" : 1627407938313,
+    "stop" : 1627407940056,
+    "duration" : 1743
+  },
+  "status" : "broken",
+  "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/conduit/conduit//login.csv'",
+  "statusTrace" : "def test_login():\n    \n        options = Options()\n        options.headless = True\n    \n        driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)\n        wait = WebDriverWait(driver, 10)\n        cwd = getcwd()\n    \n        try:\n            driver.get('http://localhost:1667/#/login')\n    \n            def find_and_clear(element_xpath):\n                element = driver.find_element_by_xpath(element_xpath)\n                element.clear()\n                return element\n    \n            sign_in_button = driver.find_element_by_xpath('//*[@id=\"app\"]/div/div/div/div/form/button')\n    \n            # data entry:\n>           with open(cwd + '//login.csv', 'r') as login_data:\nE           FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/conduit/conduit//login.csv'\n\ntests/test_login.py:34: FileNotFoundError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/conduit/conduit//login.csv'",
+    "statusTrace" : "def test_login():\n    \n        options = Options()\n        options.headless = True\n    \n        driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)\n        wait = WebDriverWait(driver, 10)\n        cwd = getcwd()\n    \n        try:\n            driver.get('http://localhost:1667/#/login')\n    \n            def find_and_clear(element_xpath):\n                element = driver.find_element_by_xpath(element_xpath)\n                element.clear()\n                return element\n    \n            sign_in_button = driver.find_element_by_xpath('//*[@id=\"app\"]/div/div/div/div/form/button')\n    \n            # data entry:\n>           with open(cwd + '//login.csv', 'r') as login_data:\nE           FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/conduit/conduit//login.csv'\n\ntests/test_login.py:34: FileNotFoundError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "83b0450ec6729720",
+      "name" : "log",
+      "source" : "83b0450ec6729720.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "b7c75d761e016aaa",
+      "name" : "stderr",
+      "source" : "b7c75d761e016aaa.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-91"
+  }, {
+    "name" : "thread",
+    "value" : "3910-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d2824db71cf27a91.json",
+  "parameterValues" : [ ]
+}
