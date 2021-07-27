@@ -13,7 +13,7 @@ from selenium.webdriver.chrome.options import Options
 options = Options()
 options.headless = True
 
-driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 
 def test_new_article():

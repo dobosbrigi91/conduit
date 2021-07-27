@@ -12,7 +12,7 @@ options = Options()
 options.headless = True
 
 def test_articles_list():
-    driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     try:
         driver.get('http://localhost:1667/#/login')
         wait = WebDriverWait(driver, 10)

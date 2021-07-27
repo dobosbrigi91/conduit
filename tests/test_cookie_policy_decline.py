@@ -9,7 +9,7 @@ options = Options()
 options.headless = True
 
 def test_cookie_policy_decline():
-    driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     try:
         driver.get('http://localhost:1667')
 
