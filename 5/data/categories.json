@@ -1,0 +1,103 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "children" : [ {
+        "name" : "test_articles_list",
+        "uid" : "42e719b0f6617b6a",
+        "parentUid" : "e4a7d37349393b5a9e33d7e741170037",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627368991788,
+          "stop" : 1627368993725,
+          "duration" : 1937
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cookie_policy_accept",
+        "uid" : "b6ff858896bc631c",
+        "parentUid" : "e4a7d37349393b5a9e33d7e741170037",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627368993830,
+          "stop" : 1627368995020,
+          "duration" : 1190
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cookie_policy_decline",
+        "uid" : "91ef09215fd56de3",
+        "parentUid" : "e4a7d37349393b5a9e33d7e741170037",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627368995054,
+          "stop" : 1627368996228,
+          "duration" : 1174
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e4a7d37349393b5a9e33d7e741170037"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'login.csv'",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "cb897ef6a53f23b7",
+        "parentUid" : "fc145e5d48d48bb65430bea86ccb4679",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627368996263,
+          "stop" : 1627368996696,
+          "duration" : 433
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fc145e5d48d48bb65430bea86ccb4679"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'newarticle.txt'",
+      "children" : [ {
+        "name" : "test_new_article",
+        "uid" : "9f9842f2b1621518",
+        "parentUid" : "6773a2d0d8bd3470c55421528f929008",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627368996700,
+          "stop" : 1627369000057,
+          "duration" : 3357
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6773a2d0d8bd3470c55421528f929008"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'registration.csv'",
+      "children" : [ {
+        "name" : "test_registration",
+        "uid" : "810b40c1c50fee43",
+        "parentUid" : "4b2bfd0658dde3a7b8ddcdba793eb86e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627369000062,
+          "stop" : 1627369002393,
+          "duration" : 2331
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4b2bfd0658dde3a7b8ddcdba793eb86e"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
