@@ -9,11 +9,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 
-# driver = webdriver.Chrome(ChromeDriverManager().install())
-
 options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
+options.add_argument('--disable-extensions')
 
 driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
 
