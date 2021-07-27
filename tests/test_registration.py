@@ -17,10 +17,16 @@ def test_registration():
     options.headless = True
 
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    wait = WebDriverWait(driver, 10)
 
     driver.get('http://localhost:1667/#/register')
     time.sleep(2)
     cwd = getcwd()
+
+    def find_and_clear(xpath):
+        element = driver.find_element_by_xpath(xpath)
+        element.clear()
+        return element
 
     try:
 
@@ -55,11 +61,4 @@ def test_registration():
 
 
 
-wait = WebDriverWait(driver, 10)
-
-
-def find_and_clear(xpath):
-    element = driver.find_element_by_xpath(xpath)
-    element.clear()
-    return element
 
