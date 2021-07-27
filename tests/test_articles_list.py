@@ -9,10 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 
 options = Options()
-options.add_argument('--headless')
-options.add_argument('--disable-gpu')
-options.add_argument('--disable-extensions')
-
+options.headless = True
 
 def test_articles_list():
     driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
