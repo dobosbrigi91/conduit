@@ -8,32 +8,25 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
-
-options = Options()
-options.headless = True
-
-driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-
-
-wait = WebDriverWait(driver, 10)
-
-
-
-def find_and_clear(xpath):
-    element = driver.find_element_by_xpath(xpath)
-    element.clear()
-    return element
+from os import getcwd
 
 
 def test_registration():
+
+    options = Options()
+    options.headless = True
+
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+
     driver.get('http://localhost:1667/#/register')
     time.sleep(2)
+    cwd = getcwd()
 
     try:
 
         sign_up_button = driver.find_element_by_class_name('btn')
 
-        with open('registration.csv', 'r') as reg:
+        with open(cwd + 'registration.csv', 'r') as reg:
             csv_reader = csv.reader(reg, delimiter=',')
             next(csv_reader)
             for row in csv_reader:
@@ -59,4 +52,14 @@ def test_registration():
                     ok_button.click()
     finally:
         driver.close()
+
+
+
+wait = WebDriverWait(driver, 10)
+
+
+def find_and_clear(xpath):
+    element = driver.find_element_by_xpath(xpath)
+    element.clear()
+    return element
 

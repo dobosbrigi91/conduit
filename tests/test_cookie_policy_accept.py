@@ -5,10 +5,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-options = Options()
-options.headless = True
 
 def test_cookie_policy_accept():
+
+    options = Options()
+    options.headless = True
+
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     try:
         driver.get('http://localhost:1667')

@@ -7,15 +7,19 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
+from os import getcwd
 
-options = Options()
-options.headless = True
-
-driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-wait = WebDriverWait(driver, 10)
 
 
 def test_login():
+
+    options = Options()
+    options.headless = True
+
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    wait = WebDriverWait(driver, 10)
+    cwd = getcwd()
+
     try:
         driver.get('http://localhost:1667/#/login')
 
@@ -27,7 +31,7 @@ def test_login():
         sign_in_button = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/button')
 
         # data entry:
-        with open('login.csv', 'r') as login_data:
+        with open(cwd + 'login.csv', 'r') as login_data:
             login_data_reader = csv.reader(login_data, delimiter=',')
             next(login_data_reader)
             for row in login_data_reader:

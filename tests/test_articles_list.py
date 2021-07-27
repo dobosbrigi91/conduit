@@ -8,10 +8,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 
-options = Options()
-options.headless = True
 
 def test_articles_list():
+
+    options = Options()
+    options.headless = True
+
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     try:
         driver.get('http://localhost:1667/#/login')
