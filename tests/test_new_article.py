@@ -8,7 +8,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
-from os import getcwd
 
 
 def test_new_article():
@@ -17,7 +16,6 @@ def test_new_article():
     options.headless = True
 
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-    cwd = getcwd()
 
     try:
         driver.get('http://localhost:1667/#/login')
@@ -47,7 +45,7 @@ def test_new_article():
         # fields entry
         article_title.send_keys('Lorem Ipsum')
         whats_this_article_about.send_keys('What is Lorem Ipsum?')
-        with open(cwd + '//newarticle.txt', 'r') as file:
+        with open('newarticle.txt', 'r') as file:
             write_article = file.read()
             write_your_article.send_keys(write_article)
         enter_tags.send_keys('loremipsum')

@@ -8,7 +8,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
-from os import getcwd
 
 
 def test_registration():
@@ -21,7 +20,6 @@ def test_registration():
 
     driver.get('http://localhost:1667/#/register')
     time.sleep(2)
-    cwd = getcwd()
 
     def find_and_clear(xpath):
         element = driver.find_element_by_xpath(xpath)
@@ -32,7 +30,7 @@ def test_registration():
 
         sign_up_button = driver.find_element_by_class_name('btn')
 
-        with open(cwd + '//registration.csv', 'r') as reg:
+        with open('registration.csv', 'r') as reg:
             csv_reader = csv.reader(reg, delimiter=',')
             next(csv_reader)
             for row in csv_reader:
