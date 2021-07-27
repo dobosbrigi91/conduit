@@ -31,7 +31,7 @@ def test_login():
         sign_in_button = driver.find_element_by_xpath('//*[@id="app"]/div/div/div/div/form/button')
 
         # data entry:
-        with open(cwd + 'login.csv', 'r') as login_data:
+        with open(cwd + '//login.csv', 'r') as login_data:
             login_data_reader = csv.reader(login_data, delimiter=',')
             next(login_data_reader)
             for row in login_data_reader:

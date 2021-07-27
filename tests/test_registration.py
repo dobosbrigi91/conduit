@@ -32,7 +32,7 @@ def test_registration():
 
         sign_up_button = driver.find_element_by_class_name('btn')
 
-        with open(cwd + 'registration.csv', 'r') as reg:
+        with open(cwd + '//registration.csv', 'r') as reg:
             csv_reader = csv.reader(reg, delimiter=',')
             next(csv_reader)
             for row in csv_reader:
