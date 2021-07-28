@@ -1,5 +1,4 @@
 # TC05 - New article
-
 from selenium import webdriver
 import time
 from webdriver_manager.chrome import ChromeDriverManager
@@ -45,7 +44,7 @@ def test_new_article():
         # fields entry
         article_title.send_keys('Lorem Ipsum')
         whats_this_article_about.send_keys('What is Lorem Ipsum?')
-        with open('newarticle.txt', 'r') as file:
+        with open('tests/newarticle.txt', 'r') as file:
             write_article = file.read()
             write_your_article.send_keys(write_article)
         enter_tags.send_keys('loremipsum')
