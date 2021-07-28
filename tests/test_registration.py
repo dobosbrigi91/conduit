@@ -37,7 +37,9 @@ def test_registration():
                 find_and_clear('//*[@id="app"]/div/div/div/div/form/fieldset[1]/input').send_keys(row[0])
                 find_and_clear('//*[@id="app"]/div/div/div/div/form/fieldset[2]/input').send_keys(row[1])
                 find_and_clear('//*[@id="app"]/div/div/div/div/form/fieldset[3]/input').send_keys(row[2])
+                time.sleep(2)
                 sign_up_button.click()
+
     # Failed registration:
                 registration_failed_message_is_visible = wait.until(
                     EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div[3]")))
