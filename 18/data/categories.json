@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class=\"btn btn-lg btn-primary pull-xs-right\">...</button> is not clickable at point (508, 398). Other element would receive the click: <div class=\"swal-footer\">...</div>\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_registration",
+        "uid" : "e7054ba307fbe06e",
+        "parentUid" : "340cfc2c83a92bda033ec2f35892d65a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627453248388,
+          "stop" : 1627453256971,
+          "duration" : 8583
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "340cfc2c83a92bda033ec2f35892d65a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
