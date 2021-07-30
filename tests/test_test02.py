@@ -44,7 +44,7 @@ def test_login():
         wait_to('//input[@placeholder="Email"]')  # visible email field
 
     # data entry:
-        with open('login.csv', 'r') as login_data:
+        with open('tests/login.csv', 'r') as login_data:
             login_data_reader = csv.reader(login_data, delimiter=',')
             next(login_data_reader)
             for row in login_data_reader:
