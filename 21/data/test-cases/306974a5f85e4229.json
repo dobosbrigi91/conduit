@@ -1,0 +1,83 @@
+{
+  "uid" : "306974a5f85e4229",
+  "name" : "test_login",
+  "fullName" : "tests.test_test02#test_login",
+  "historyId" : "0e9e806835091c2170ae91dd7a206068",
+  "time" : {
+    "start" : 1627670443566,
+    "stop" : 1627670445163,
+    "duration" : 1597
+  },
+  "status" : "broken",
+  "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: 'login.csv'",
+  "statusTrace" : "def test_login():\n    \n        options = Options()\n        options.headless = True\n    \n        driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)\n    \n    # # # # # # - def - # # # # # #\n    \n        def find_and_clear(element_xpath):\n            element = driver.find_element_by_xpath(element_xpath)\n            element.clear()\n            return element\n    \n        def wait_to(element_xpath):\n            wait = WebDriverWait(driver, 10).until(\n                EC.visibility_of_element_located((By.XPATH, element_xpath)))\n            if not wait:\n                return False\n            return True\n    \n        def element_click(element_xpath):\n            button = driver.find_element_by_xpath(element_xpath)\n            button.click()\n            return button\n    \n    # # # # # # - tests - # # # # # #\n    \n        try:\n            driver.get('http://localhost:1667/#/login')\n        # # log in and log out\n            wait_to('//input[@placeholder=\"Email\"]')  # visible email field\n    \n        # data entry:\n>           with open('login.csv', 'r') as login_data:\nE           FileNotFoundError: [Errno 2] No such file or directory: 'login.csv'\n\ntests/test_test02.py:47: FileNotFoundError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: 'login.csv'",
+    "statusTrace" : "def test_login():\n    \n        options = Options()\n        options.headless = True\n    \n        driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)\n    \n    # # # # # # - def - # # # # # #\n    \n        def find_and_clear(element_xpath):\n            element = driver.find_element_by_xpath(element_xpath)\n            element.clear()\n            return element\n    \n        def wait_to(element_xpath):\n            wait = WebDriverWait(driver, 10).until(\n                EC.visibility_of_element_located((By.XPATH, element_xpath)))\n            if not wait:\n                return False\n            return True\n    \n        def element_click(element_xpath):\n            button = driver.find_element_by_xpath(element_xpath)\n            button.click()\n            return button\n    \n    # # # # # # - tests - # # # # # #\n    \n        try:\n            driver.get('http://localhost:1667/#/login')\n        # # log in and log out\n            wait_to('//input[@placeholder=\"Email\"]')  # visible email field\n    \n        # data entry:\n>           with open('login.csv', 'r') as login_data:\nE           FileNotFoundError: [Errno 2] No such file or directory: 'login.csv'\n\ntests/test_test02.py:47: FileNotFoundError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a2db4924923e9dbc",
+      "name" : "log",
+      "source" : "a2db4924923e9dbc.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "d1245955329325a8",
+      "name" : "stderr",
+      "source" : "d1245955329325a8.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_test02"
+  }, {
+    "name" : "host",
+    "value" : "fv-az77-41"
+  }, {
+    "name" : "thread",
+    "value" : "3813-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_test02"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "306974a5f85e4229.json",
+  "parameterValues" : [ ]
+}
