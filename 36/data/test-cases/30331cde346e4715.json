@@ -1,12 +1,12 @@
 {
-  "uid" : "4745113cfceae4ae",
-  "name" : "test_login",
-  "fullName" : "tests.test_test02#test_login",
-  "historyId" : "0e9e806835091c2170ae91dd7a206068",
+  "uid" : "30331cde346e4715",
+  "name" : "test_test03",
+  "fullName" : "tests.test_test03#test_test03",
+  "historyId" : "f7200f8d0a6b49f2cdc3ed62423124d8",
   "time" : {
-    "start" : 1627673343964,
-    "stop" : 1627673412398,
-    "duration" : 68434
+    "start" : 1627673517631,
+    "stop" : 1627673599503,
+    "duration" : 81872
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,15 +16,15 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "a46ddb44b91bce9b",
+      "uid" : "3c3cdd3b52f535c7",
       "name" : "log",
-      "source" : "a46ddb44b91bce9b.txt",
+      "source" : "3c3cdd3b52f535c7.txt",
       "type" : "text/plain",
       "size" : 344
     }, {
-      "uid" : "55021308fb2fd0a3",
+      "uid" : "26d0f74f6f847b6f",
       "name" : "stderr",
-      "source" : "55021308fb2fd0a3.txt",
+      "source" : "26d0f74f6f847b6f.txt",
       "type" : "text/plain",
       "size" : 215
     } ],
@@ -40,13 +40,13 @@
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "test_test02"
+    "value" : "test_test03"
   }, {
     "name" : "host",
-    "value" : "fv-az81-201"
+    "value" : "fv-az74-587"
   }, {
     "name" : "thread",
-    "value" : "3699-MainThread"
+    "value" : "3613-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -55,7 +55,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.test_test02"
+    "value" : "tests.test_test03"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -70,6 +70,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "4745113cfceae4ae.json",
+  "source" : "30331cde346e4715.json",
   "parameterValues" : [ ]
 }
