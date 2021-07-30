@@ -114,7 +114,8 @@ def test_test03():
             # search and delete article what title is "hello"
         element_click('//div[@class="container"]//ul/li[4]/a')  # user page
         wait_to('//*[@id="app"]/div/div[2]/div/div/div[1]/ul/li[1]/a')  # visible my articles
-
+        
+        time.sleep(10)
         find('//div[@class="article-preview"]/a[contains(@href,"hello")]').click()
         wait_to('//*[@id="app"]/div/div[1]/div/div/span/button')
         element_click('//*[@id="app"]/div/div[1]/div/div/span/button')  # delete article
