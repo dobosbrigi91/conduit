@@ -1,0 +1,60 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'registration.csv'",
+      "children" : [ {
+        "name" : "test_registration",
+        "uid" : "8b25123849d55381",
+        "parentUid" : "4b2bfd0658dde3a7b8ddcdba793eb86e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627670881938,
+          "stop" : 1627670894757,
+          "duration" : 12819
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4b2bfd0658dde3a7b8ddcdba793eb86e"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'login.csv'",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "2f06932520341be8",
+        "parentUid" : "fc145e5d48d48bb65430bea86ccb4679",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627670894792,
+          "stop" : 1627670896321,
+          "duration" : 1529
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fc145e5d48d48bb65430bea86ccb4679"
+    }, {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: headless chrome=92.0.4515.107)",
+      "children" : [ {
+        "name" : "test_test03",
+        "uid" : "a933d1f375ac3d68",
+        "parentUid" : "ec3bbc8ab00a88a9092e6b22350fcb56",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627670896328,
+          "stop" : 1627670907525,
+          "duration" : 11197
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ec3bbc8ab00a88a9092e6b22350fcb56"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
