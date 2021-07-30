@@ -1,0 +1,52 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az77-41",
+    "children" : [ {
+      "name" : "3625-MainThread",
+      "children" : [ {
+        "name" : "test_registration",
+        "uid" : "f9b2e645de773f5c",
+        "parentUid" : "85eac836a2af42482127be91b7c34e16",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627673273282,
+          "stop" : 1627673304781,
+          "duration" : 31499
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_test03",
+        "uid" : "b45b35afcab3c525",
+        "parentUid" : "85eac836a2af42482127be91b7c34e16",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627673375448,
+          "stop" : 1627673385353,
+          "duration" : 9905
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login",
+        "uid" : "e80f134dfe5afa4c",
+        "parentUid" : "85eac836a2af42482127be91b7c34e16",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627673304785,
+          "stop" : 1627673375444,
+          "duration" : 70659
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "85eac836a2af42482127be91b7c34e16"
+    } ],
+    "uid" : "a6167fc4405eba6213391bf204b4be80"
+  } ],
+  "name" : "timeline"
+}
