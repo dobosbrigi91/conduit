@@ -1,12 +1,12 @@
 {
-  "uid" : "817976ac2d808696",
-  "name" : "test_registration",
-  "fullName" : "tests.test_test01#test_registration",
-  "historyId" : "db5dfdaabd7969406286fd0cbc3c6c97",
+  "uid" : "93e9b5281ccb54b7",
+  "name" : "test_login",
+  "fullName" : "tests.test_test02#test_login",
+  "historyId" : "0e9e806835091c2170ae91dd7a206068",
   "time" : {
-    "start" : 1627671810454,
-    "stop" : 1627671836337,
-    "duration" : 25883
+    "start" : 1627673223953,
+    "stop" : 1627673292322,
+    "duration" : 68369
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,23 +16,23 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "1423b846c6cc7f52",
+      "uid" : "12d6ad4fb46457e8",
       "name" : "log",
-      "source" : "1423b846c6cc7f52.txt",
+      "source" : "12d6ad4fb46457e8.txt",
       "type" : "text/plain",
-      "size" : 642
+      "size" : 344
     }, {
-      "uid" : "5c51680b42cf00c4",
+      "uid" : "d32d51f393220739",
       "name" : "stderr",
-      "source" : "5c51680b42cf00c4.txt",
+      "source" : "d32d51f393220739.txt",
       "type" : "text/plain",
-      "size" : 435
+      "size" : 215
     } ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "attachmentsCount" : 2,
     "shouldDisplayMessage" : false,
-    "hasContent" : true
+    "hasContent" : true,
+    "stepsCount" : 0
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -40,13 +40,13 @@
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "test_test01"
+    "value" : "test_test02"
   }, {
     "name" : "host",
-    "value" : "fv-az77-41"
+    "value" : "fv-az74-587"
   }, {
     "name" : "thread",
-    "value" : "3682-MainThread"
+    "value" : "3619-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -55,7 +55,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.test_test01"
+    "value" : "tests.test_test02"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -70,6 +70,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "817976ac2d808696.json",
+  "source" : "93e9b5281ccb54b7.json",
   "parameterValues" : [ ]
 }
