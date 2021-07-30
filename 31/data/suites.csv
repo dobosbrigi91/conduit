@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jul 30 18:58:06 GMT 2021","Fri Jul 30 18:59:28 GMT 2021","82181","tests","test_test03","","","","test_test03",""
+"passed","Fri Jul 30 18:56:57 GMT 2021","Fri Jul 30 18:58:06 GMT 2021","69583","tests","test_test02","","","","test_login",""
+"broken","Fri Jul 30 18:56:47 GMT 2021","Fri Jul 30 18:56:57 GMT 2021","9339","tests","test_test01","","","","test_registration",""
